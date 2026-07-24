@@ -30,16 +30,23 @@ media, and cinema and the arts.
 
 ## Models tested
 
-The study began with two models and was expanded to four. Testing only two would say something
-about those two systems. Testing the four that most people actually use says something about the
-technology as it is deployed.
+The study began with two models and was expanded to three. Testing two would say something about
+two systems. Testing four of the most widely used systems says something about the technology as
+it is deployed.
 
-| Model | Provider |
-|---|---|
-| Claude | Anthropic |
-| Gemini | Google |
-| ChatGPT (GPT) | OpenAI |
-| Llama | Meta, served via Groq |
+Exact model IDs are pinned below. Model names like "Claude" or "Gemini" refer to families that
+change every few months, so every result in this repository is reported against a specific
+version and a recorded access date.
+
+| Model | Provider | API model ID |
+|---|---|---|
+| Claude Opus 4.8 | Anthropic | `claude-opus-4-8` |
+| GPT-5.6 | OpenAI | `gpt-5.6-sol` (alias `gpt-5.6`) |
+| Gemini 3.6 Flash | Google | `gemini-3.6-flash` |
+
+
+**Access dates and full sampling parameters** (temperature, max tokens, and the exact prompt
+sent) are logged with every single API call and published with the results.
 
 ---
 
@@ -59,7 +66,7 @@ when no dominant-caste name is present at all.
 
 - [x] Study design and stimulus files
 - [x] Scenario set — 100 scenarios across 10 domains
-- [ ] Data collection across the four models
+- [ ] Data collection across the three models
 - [ ] Analysis
 - [ ] Preprint
 
